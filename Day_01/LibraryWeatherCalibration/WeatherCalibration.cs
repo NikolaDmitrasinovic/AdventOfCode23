@@ -4,7 +4,10 @@
     {
         public static int Calibrate(string calibrateString)
         {
-            return 0;
+            if (string.IsNullOrEmpty(calibrateString))
+                return 0;
+
+            return int.Parse(calibrateString);
         }
     }
 }

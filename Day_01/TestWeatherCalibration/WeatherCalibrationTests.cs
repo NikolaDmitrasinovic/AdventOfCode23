@@ -13,5 +13,17 @@ namespace TestWeatherCalibration
             // Assert
             calibrationResult.Should().Be(0);
         }
-    }
+
+        [Fact]
+        public void ShouldReturnNumber_ForInputString()
+        {
+            // Arrange
+
+            // Act
+            var calibrationResult = WeatherCalibration.Calibrate("1");
+
+            // Assert
+            calibrationResult.Should().Be(1);
+        }
+    }    
 }

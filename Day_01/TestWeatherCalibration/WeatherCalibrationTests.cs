@@ -14,16 +14,18 @@ namespace TestWeatherCalibration
             calibrationResult.Should().Be(0);
         }
 
-        [Fact]
-        public void ShouldReturnNumber_ForInputString()
+        [Theory]
+        [InlineData("1", 1)]
+        [InlineData("12", 12)]
+        public void ShouldReturnNumber_ForInputString(string input, int result)
         {
             // Arrange
 
             // Act
-            var calibrationResult = WeatherCalibration.Calibrate("1");
+            var calibrationResult = WeatherCalibration.Calibrate(input);
 
             // Assert
-            calibrationResult.Should().Be(1);
+            calibrationResult.Should().Be(result);
         }
-    }    
+    }
 }

@@ -17,7 +17,7 @@ namespace TestWeatherCalibration
         [Theory]
         [InlineData("1", 1)]
         [InlineData("12", 12)]
-        public void ShouldReturnNumber_ForInputString(string input, int result)
+        public void ShouldReturnNumber_ForInputNumberInStringFormat(string input, int result)
         {
             // Arrange
 

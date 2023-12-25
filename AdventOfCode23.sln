@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day_01", "Day_01", "{3D6DE14C-8026-4A8B-AA29-77C6EA457B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryWeatherCalibration", "Day_01\LibraryWeatherCalibration\LibraryWeatherCalibration.csproj", "{D8B30D9B-B74B-47F9-B3D3-B1137BD43B93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWeatherCalibration", "Day_01\TestWeatherCalibration\TestWeatherCalibration.csproj", "{015EC492-9EC1-4BA9-B204-E91B421BEB8F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8B30D9B-B74B-47F9-B3D3-B1137BD43B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B30D9B-B74B-47F9-B3D3-B1137BD43B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B30D9B-B74B-47F9-B3D3-B1137BD43B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B30D9B-B74B-47F9-B3D3-B1137BD43B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015EC492-9EC1-4BA9-B204-E91B421BEB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015EC492-9EC1-4BA9-B204-E91B421BEB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015EC492-9EC1-4BA9-B204-E91B421BEB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015EC492-9EC1-4BA9-B204-E91B421BEB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8B30D9B-B74B-47F9-B3D3-B1137BD43B93} = {3D6DE14C-8026-4A8B-AA29-77C6EA457B27}
+		{015EC492-9EC1-4BA9-B204-E91B421BEB8F} = {3D6DE14C-8026-4A8B-AA29-77C6EA457B27}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49447D97-321F-4AB2-A8AB-661662E39A68}

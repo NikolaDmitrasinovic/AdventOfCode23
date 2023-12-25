@@ -28,16 +28,20 @@ namespace TestWeatherCalibration
             calibrationResult.Should().Be(result);
         }
 
-        [Fact]
-        public void ShouldReturnNumber_FromInputString()
+        [Theory]
+        [InlineData("1abc2", 12)]
+        [InlineData("pqr3stu8vwx", 38)]
+        [InlineData("a1b2c3d4e5f", 15)]
+        [InlineData("treb7uchet", 77)]
+        public void ShouldReturnNumber_FromInputString(string input, int result)
         {
             // Arrange
 
             // Act
-            var calibrationResult = WeatherCalibration.Calibrate("1abc2");
+            var calibrationResult = WeatherCalibration.Calibrate(input);
 
             // Assert
-            calibrationResult.Should().Be(12);
+            calibrationResult.Should().Be(result);
         }
     }
 }

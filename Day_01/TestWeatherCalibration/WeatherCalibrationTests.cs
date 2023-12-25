@@ -15,7 +15,7 @@ namespace TestWeatherCalibration
         }
 
         [Theory]
-        [InlineData("1", 1)]
+        [InlineData("1", 11)]
         [InlineData("12", 12)]
         public void ShouldReturnNumber_ForInputNumberInStringFormat(string input, int result)
         {
@@ -26,6 +26,18 @@ namespace TestWeatherCalibration
 
             // Assert
             calibrationResult.Should().Be(result);
+        }
+
+        [Fact]
+        public void ShouldReturnNumber_FromInputString()
+        {
+            // Arrange
+
+            // Act
+            var calibrationResult = WeatherCalibration.Calibrate("1abc2");
+
+            // Assert
+            calibrationResult.Should().Be(12);
         }
     }
 }

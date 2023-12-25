@@ -2,7 +2,7 @@
 {
     public class WeatherCalibration
     {
-        public static object Calibrate(string v)
+        public static int Calibrate(string calibrateString)
         {
             return 0;
         }
